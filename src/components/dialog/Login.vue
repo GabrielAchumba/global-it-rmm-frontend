@@ -31,7 +31,7 @@
                  />
                </div> -->
                <div class="row column stretch">
-                 <s-save-button :enableFullWidth="true"  height="50">Submit</s-save-button>
+                 <s-save-button :enableFullWidth="true"  height="50">Login</s-save-button>
                  <p class="q-pa-sm"><a class="text-positive" href="https://www.w3.org/">Forgot Password?</a></p>
                </div>
              </q-form>

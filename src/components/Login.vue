@@ -32,7 +32,7 @@
                  />
                </div> -->
                <div class="row column stretch">
-                 <s-save-button :enableFullWidth="true"  height="50">Submit</s-save-button>
+                 <s-save-button :enableFullWidth="true"  height="50">LOGIN</s-save-button>
                </div>
              </q-form>
          </q-card>
