@@ -10,6 +10,7 @@
             </div>
             <q-space/>
             <q-btn 
+            no-caps
             flat label="Login" class="bg-positive text-accent" @click="titleBarButtonEvent"/>
         </q-bar>
 
