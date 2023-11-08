@@ -12,7 +12,7 @@
 
 <script>
 import mixin_Input from "src/mixins/Mixin-Input";
-import Login from "./Login.vue"
+import Login from "./dialog/Login.vue"
 export default {
     mixins: [mixin_Input],
     components:{
