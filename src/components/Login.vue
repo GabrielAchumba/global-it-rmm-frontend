@@ -104,9 +104,9 @@
          backRoute: { name: "", route: "/"},
          phoneNumberForm: {
              qInputs: [
-                 {label: "Phone Number", 
-                 name: "", 
-                 placeholder: "Enter phone number", 
+                 {label: "Username", 
+                 name: "Tony", 
+                 placeholder: "Enter username", 
                  type: "text", 
                  icon: "phone"},
              ],
@@ -115,7 +115,7 @@
              qInputs: [
                {
                  label: "Password", 
-                 name: "", 
+                 name: "abcdefghij", 
                  placeholder: "Enter password", 
                  type: "password",
                  icon: ""
