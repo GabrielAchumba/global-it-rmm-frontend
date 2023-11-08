@@ -4,11 +4,6 @@ const routes = [
     path: '',
     component: () => import('layouts/EmptyLayout.vue'),
     children: [
-      /* {
-        path: '',
-        meta: { name: "landingpage", requiresAuth: false },
-        component: () => import('components/LandingRoute.vue')
-      }, */
       {
         path: '/',
         meta: { name: "login", requiresAuth: false },
@@ -19,21 +14,16 @@ const routes = [
         meta: { name: "landing", requiresAuth: false },
         component: () => import('pages/Landing.vue')
       },
-      /* {
-        path: '/register',
-        meta: { name: "register", requiresAuth: false },
-        component: () => import('pages/profile/personal-profile.vue')
-      } */
-      /* {
-        path: '/input',
-        meta: { name: "input", requiresAuth: false },
-        component:  () => import('components/test/table1.vue')
+      {
+        path: '/dashboard',
+        meta: { name: "dashboard", requiresAuth: false },
+        component: () => import('pages/Dashboard.vue')
       },
       {
-        path: '/setup',
-        meta: { name: "setup", requiresAuth: false },
-        component:  () => import('components/test/table2.vue')
-      } */
+        path: '/access-control',
+        meta: { name: "accessControl", requiresAuth: false },
+        component: () => import('pages/AccessControl.vue')
+      },
     ]
   },
   {
