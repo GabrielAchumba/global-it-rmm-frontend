@@ -2,21 +2,15 @@
     <div class="row">
          <q-bar 
             class="col-12 bg-positive text-accent"
-            style="height:50px;">
-            <q-btn 
-            class="bg-positive text-accent" 
-            icon-right="arrow_back" 
-            :label="backRoute.name" 
-            flat
-            no-caps
-            @click="backRouteAction(backRoute.route)"
-            size="md"/>
-            <q-space/>
-            <div class="text-accent text-center text-h6">{{ title }}</div>
+            style="height:10vh;">
+            <div>
+                <q-avatar>
+                    <img :src="src" class="text-accent">
+                </q-avatar>
+            </div>
             <q-space/>
             <q-btn 
-            v-if="isCloseForm"
-            dense flat icon="close" class="bg-positive text-accent" @click="closeFormDialog"/>
+            flat label="Login" class="bg-positive text-accent" @click="titleBarButtonEvent"/>
         </q-bar>
 
     </div>
@@ -26,7 +20,7 @@
 
 export default {
     props:{
-        title:{
+        src:{
             type: String,
             default: ""
         },
@@ -42,8 +36,8 @@ export default {
         }
     },
     methods:{
-        closeFormDialog(){
-            this.$emit("closeFormDialog")
+        titleBarButtonEvent(){
+            this.$emit("titleBarButtonEvent")
         },
         backRouteAction(route){
             this.$router.push(route);

@@ -134,44 +134,8 @@
                    return ""
                }
            }, 
-         async logIn(){
-           var context = this;
-           let phone = `${context.phoneNumberForm.qInputs[0].name}`;
-           console.log("Phone 1: ", phone)
-           console.log("phone.length: ", phone.length)
-           if(phone.length > 10){
-               const diff = phone.length - 10;
-               phone = phone.slice(diff);
-               console.log("Phone 2: ", phone)
-           }
-           
-           const payload = {
-                   url: "user/login",
-                   req: {
-                     phoneNumber: `+234${phone}`,
-                     password: context.passwordForm.qInputs[0].name
-                    }
-               } 
-   
-               
-               console.log("payload: ", payload)
-               try{
-                   this.$store.commit("authenticationStore/setShowSpinner", true);
-                   const response = await post(payload);
-                   console.log("response: ", response)
-                   
-                   //this.$store.commit("authenticationStore/setShowSpinner", false);
-               if(response.data.success == true){
-                 console.log("user: ", response.data.data.user)
-                 console.log("token: ", response.data.data.token)
-                 this.$store.commit("authenticationStore/Login", {
-                   user: response.data.data.user,
-                   token: response.data.data.token
-                 });
-               }
-               }catch(e){
-                   this.$store.commit("authenticationStore/setShowSpinner", false);
-               }
+         logIn(){
+            this.$emit("closeLogInDialog")
        },
        async mainLogin(){
          var context = this;
