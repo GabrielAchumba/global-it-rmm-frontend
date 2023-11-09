@@ -27,23 +27,24 @@
                 :active="link === listItem.id"
                 @click="link = listItem.id"
                 active-class="my-menu-link"
+                class="row"
                 >
-                <q-item-section>
+                <q-item-section class="col-5">
                     <div class="row">
-                        <q-checkbox v-model="listItem.isChecked"/>
+                        <q-checkbox v-model="listItem.isChecked" keep-color color="accent"/>
                         <span>
                             <p v-for="msg in listItem.msgs"
                             :key="msg.title">{{ msg.title }}</p>
                         </span>
                     </div>
                 </q-item-section>
-                <q-item-section side>
-                    <span class="gt-sm inline">
-                        <q-icon name="person"/>
-                        <hr style="color:white">
-                        <hr style="color:white"/>
-                        <q-icon name="edit"/>
-                    </span>
+                <q-item-section class="col-7">
+                    <div class="row">
+                        <q-icon name="person" class="col q-mx-sm"/>
+                        <hr style="border: 2px solid green;" class="col q-mx-sm">
+                        <hr style="border: 2px solid white;" class="col q-mx-sm"/>
+                        <q-icon name="computer" class="col q-mx-sm"/>
+                    </div>
                 </q-item-section>
                 </q-item>
             </q-list>
