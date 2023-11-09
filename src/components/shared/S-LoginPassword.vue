@@ -7,7 +7,6 @@
       v-model="qInput.name"
       :type="qInputType"
       style="width: 100%"
-      clearable
       filled
       :dense="true"
       color="accent"

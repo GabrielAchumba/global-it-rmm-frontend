@@ -8,16 +8,17 @@
                     class="text-accent bg-primary"
                     active-color="positive"
                     indicator-color="positive"
+                    inline-label
                     align="justify"
                     narrow-indicator
                     >
-                        <q-tab name="servers" label="Servers"  no-caps/>
-                        <q-tab name="workstations" label="Workstations" no-caps/>
+                        <q-tab name="servers" label="Servers" icon="dns"  no-caps/>
+                        <q-tab name="workstations" label="Workstations" icon="computer" no-caps/>
                         <q-tab name="mixed" label="Mixed" no-caps/>
                 </q-tabs>
                 <q-space/>
                 <Search/>
-                <q-btn flat icon="notifications" class="text-accent"/>
+                <q-btn flat icon="filter_alt" class="text-accent"/>
             </div>
             <Table/>
         </q-span>

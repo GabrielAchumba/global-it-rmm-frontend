@@ -38,7 +38,12 @@
                     </div>
                 </q-item-section>
                 <q-item-section side>
-                    <div><q-icon name="person"/><hr style="color:white"><hr style="color:white"/><q-icon name="edit"/></div>
+                    <span class="gt-sm inline">
+                        <q-icon name="person"/>
+                        <hr style="color:white">
+                        <hr style="color:white"/>
+                        <q-icon name="edit"/>
+                    </span>
                 </q-item-section>
                 </q-item>
             </q-list>

@@ -1,7 +1,14 @@
 <template>
-    <div class="row">
+    <div class="row q-mt-lg">
         <SmallBar class="col-2"/>
         <AccessForm class="col-10"/>
+        <!-- <div style="height: 20vh;" class="col-12 bg-red"></div> -->
+        <!-- <div class="col-12" style="height: 100vh">
+            <div class="row">
+                <SmallBar class="col-2"/>
+                <AccessForm class="col-10"/>
+            </div>
+        </div> -->
     </div>
 </template>
    

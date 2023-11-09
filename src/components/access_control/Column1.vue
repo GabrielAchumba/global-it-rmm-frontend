@@ -38,7 +38,7 @@ export default {
     data(){
         return {
             upTabs:[
-                {name: "Access", icon: "settings"},
+                {name: "Access", icon: "computer"},
                 {name: "Admin", icon: "settings"}
             ],
             downTabs:[

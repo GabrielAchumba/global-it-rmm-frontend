@@ -3,16 +3,15 @@
     <q-input
       v-for="qInput in formData.qInputs" 
       :key="qInput.label"
-      outlined
+      :outlined="qInput.outlined ? qInput.outlined : false"
       :readonly="qInput.readonly"
       v-model="qInput.name"
-      clearable
       v-select-all
       :label="qInput.label"
       :type="qInput.type"
       style="width: 100%;"
       filled
-      :dense="true"
+      :dense="qInput.dense ? qInput.dense : false"
       :disable="qInput.disable"
       color="accent"
       dark
